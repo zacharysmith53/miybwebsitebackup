@@ -56,7 +56,17 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="./">Home</a></li>
-        <li><a href="./about/">About</a></li>
+        <!--<li><a href="./about/">About</a></li>-->
+        <li>
+            <div class="btn-group navbar-btn">
+                <button class="btn" onclick="location.href='./about/'" >About</button>
+                <button data-toggle="dropdown" class="btn dropdown-toggle"><span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="./about/contact/">contact</a></li>
+                    <!--<li class="divider"></li>-->
+                </ul>
+            </div>
+        </li>
         <li><a href="./workplaceskills/">Workplace Skills</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
